@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>introdu numarul 1</h1>
+    <input type="number" id="num1" min="1" max="10" >
+    <h1>introdu numarul 2</h1>
+    <input type="number" id="num2" min="1" max="10">
+    <button onclick="suma()">+</button>
+    <button onclick="scadere()">-</button>
+    <button onclick="inmultire()">*</button>
+    <button onclick="impartire()">/</button>
+
+    <p id="rezultat"></p>
+    
+
+
+
+
+    <script>
+
+    
+    function suma()
+        {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let rezultat = num1 + num2;
+            document.getElementById("rezultat").innerHTML = rezultat;
+        }
+        function scadere()
+        {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let rezultat = num1 - num2;
+            document.getElementById("rezultat").innerHTML = rezultat;
+        }
+        function inmultire()
+        {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let rezultat = num1 * num2;
+            document.getElementById("rezultat").innerHTML = rezultat;
+        }
+        function impartire()
+        {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let rezultat = num1 / num2;
+            document.getElementById("rezultat").innerHTML = rezultat;
+        }
+        
+
+
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
