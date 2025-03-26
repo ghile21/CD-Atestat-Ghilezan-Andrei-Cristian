@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxHygiene</title>
+
+    <link rel="icon" href="/Screenshot 2025-02-14 161323.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="produs.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../imagine/logo.png" >
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="../homepage.html">Acasa</a></li>
+                <li><a href="../produse.html">Produse</a></li>
+                <li><a href="../pachete.html">Pachete</a></li>
+                <li><a href="../about_us.html">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </nav> 
+    <a style="text-decoration: none;" href="../produse.html" >
+    <button class="buton-inapoi">Inapoi</button>
+    </a>
+    <div class="product-container">
+        <!-- Product Image in Container -->
+        <div class="product-image">
+            <img src="../imagine/robi.jpg" >
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <p class="category">Produse</p>
+            <h1>Lorem Ipsum</h1>
+            <p>Disponibil in stoc</p>
+            <p>Taxa de livrare inclusa</p>
+            <h1></h1>
+            <p class="price">46,80 Lei</p><p>( TVA inclus )</p>
+
+            <!-- Quantity & Add to Cart -->
+            <div class="cart-options">
+                <input type="number" value="1" min="1" class="quantity">
+                <button class="add-to-cart">Adaugă în Coș</button>
+            </div>
+
+            <!-- Product Details Link -->
+            <p class="details">🔽 Detaliile Produsului</p>
+            <p>Descoperă ROBI FreshCare, soluția ideală pentru un aspect îngrijit și o senzație de prospețime întreaga zi! Cu o formulă inovatoare, acest produs combină curățarea delicată cu un parfum revigorant, oferindu-ți un look fresh și energic. Datorită tehnologiei avansate, neutralizează impuritățile, lăsând pielea catifelată și protejată. Indiferent dacă ești în mișcare sau te pregătești pentru o ieșire specială, ROBI FreshCare te ajută să arăți impecabil. Adaugă acest produs esențial în rutina ta zilnică și bucură-te de îngrijire premium cu un stil inconfundabil!</p>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 MaxHygiene. All Rights Reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" title="Instagram"></a></li>
+            <li><a href="https://www.youtube.com" target="_blank" class="fab fa-youtube" title="YouTube"></a></li>
+        </ul>
+    </footer>
+
+    <script>
+
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.documentElement.scrollTop = 0; 
+    }
+    </script>
+</body>
+</html>
