@@ -22,9 +22,11 @@
                 <li><a href="../about_us.html">About Us</a></li>
                 <li><a href="../contact.html">Contact</a></li>
             </ul>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+            <a href="../cart.html">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </a>
         </div>
     </nav> 
     <a style="text-decoration: none;" href="../produse.html" >
@@ -33,23 +35,27 @@
     <div class="product-container">
         <!-- Product Image in Container -->
         <div class="product-image">
-            <img src="../imagine/robi.jpg" >
+            <img src="../imagine/apagura2.png" >
         </div>
 
         <!-- Product Details -->
         <div class="product-details">
             <p class="category">Produse</p>
-            <h1>Lorem Ipsum</h1>
+            <h1>Apa de gura Listerine Total Care 500 ml</h1>
             <p>Disponibil in stoc</p>
             <p>Taxa de livrare inclusa</p>
             <h1></h1>
-            <p class="price">46,80 Lei</p><p>( TVA inclus )</p>
+            <p class="price">25,70 lei</p><p>( TVA inclus )</p>
 
             <!-- Quantity & Add to Cart -->
             <div class="cart-options">
                 <input type="number" value="1" min="1" class="quantity">
-                <button class="add-to-cart">Adaugă în Coș</button>
+                <button class="add-to-cart" onclick="addToCart({ id: 'produs28', name: 'Apa de gura Listerine Total Care 500 ml', price: 25.70 })">Adauga in cos</button>
             </div>
+
+            
+
+    <script src="../script.js"></script>
 
             <!-- Product Details Link -->
             <p class="details">🔽 Detaliile Produsului</p>

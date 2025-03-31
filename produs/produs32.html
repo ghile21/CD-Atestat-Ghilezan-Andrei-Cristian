@@ -22,9 +22,11 @@
                 <li><a href="../about_us.html">About Us</a></li>
                 <li><a href="../contact.html">Contact</a></li>
             </ul>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+            <a href="../cart.html">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </a>
         </div>
     </nav> 
     <a style="text-decoration: none;" href="../produse.html" >
@@ -48,14 +50,19 @@
             <!-- Quantity & Add to Cart -->
             <div class="cart-options">
                 <input type="number" value="1" min="1" class="quantity">
-                <button class="add-to-cart">Adaugă în Coș</button>
+                <button class="add-to-cart" onclick="addToCart({ id: 'produs32', name: 'RobiFreshCore', price: 0.01 })">Adauga in cos</button>
             </div>
 
-            <!-- Product Details Link -->
+      <!-- Product Details Link -->
             <p class="details">🔽 Detaliile Produsului</p>
             <p>Descoperă ROBI FreshCare, soluția ideală pentru un aspect îngrijit și o senzație de prospețime întreaga zi! Cu o formulă inovatoare, acest produs combină curățarea delicată cu un parfum revigorant, oferindu-ți un look fresh și energic. Datorită tehnologiei avansate, neutralizează impuritățile, lăsând pielea catifelată și protejată. Indiferent dacă ești în mișcare sau te pregătești pentru o ieșire specială, ROBI FreshCare te ajută să arăți impecabil. Adaugă acest produs esențial în rutina ta zilnică și bucură-te de îngrijire premium cu un stil inconfundabil!</p>
         </div>
-    </div>
+    </div>      
+
+    <script src="../script.js"></script>
+    
+
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!-- Footer -->

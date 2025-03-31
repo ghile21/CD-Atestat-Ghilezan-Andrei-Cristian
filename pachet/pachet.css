@@ -13,7 +13,7 @@ body {
     align-items: center;
     padding: 20px 60px;
     background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px #212121;
     position: relative;
 }
 .logo img {
@@ -78,7 +78,7 @@ body {
     max-width: 900px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px #212121;
     gap: 20px;
 }
 .product-image {

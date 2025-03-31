@@ -12,7 +12,7 @@ body {
     align-items: center;
     padding: 20px 60px;
     background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px #212121;
     position: relative;
 }
 .logo img {
@@ -53,11 +53,11 @@ body {
 .hero {
     display: flex;
     justify-content: center;
-    font-size: 36px;  /* Dimensiunea textului */
+    font-size: 36px;  
     font-weight: bold;
     color: #333;
-    margin-top: 40px;  /* Ajustează spațiul sub navbar */
-    margin-left: 40px;  /* Poziționează titlul mai spre stânga */
+    margin-top: 40px;  
+    margin-left: 40px;  
 }
 .hero img{
     margin-top: -30px;
@@ -109,7 +109,7 @@ body {
     width: 100%;
     height: 3px; 
     background-color: #0074d9; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 4px 8px #212121;
     margin-top: 60px; 
 }
 

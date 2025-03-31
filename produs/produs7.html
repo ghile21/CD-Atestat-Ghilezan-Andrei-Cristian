@@ -22,9 +22,11 @@
                 <li><a href="../about_us.html">About Us</a></li>
                 <li><a href="../contact.html">Contact</a></li>
             </ul>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+            <a href="../cart.html">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </a>
         </div>
     </nav> 
     <a style="text-decoration: none;" href="../produse.html" >
@@ -33,27 +35,31 @@
     <div class="product-container">
         <!-- Product Image in Container -->
         <div class="product-image">
-            <img src="../imagine/robi.jpg" >
+            <img src="../imagine/pastadedinti3.png" >
         </div>
 
         <!-- Product Details -->
         <div class="product-details">
             <p class="category">Produse</p>
-            <h1>Lorem Ipsum</h1>
+            <h1>Pasta de dinti Sensodyne Nourish Gently Soothing 75 ml</h1>
             <p>Disponibil in stoc</p>
             <p>Taxa de livrare inclusa</p>
             <h1></h1>
-            <p class="price">46,80 Lei</p><p>( TVA inclus )</p>
+            <p class="price">24,85 lei</p><p>( TVA inclus )</p>
 
             <!-- Quantity & Add to Cart -->
             <div class="cart-options">
                 <input type="number" value="1" min="1" class="quantity">
-                <button class="add-to-cart">Adaugă în Coș</button>
+                <button class="add-to-cart" onclick="addToCart({ id: 'produs7', name: 'Pasta de dinti Sensodyne Nourish Gently Soothing 75 ml', price: 24.85  })">Adauga in cos</button>
             </div>
+
+            
+
+    <script src="../script.js"></script>
 
             <!-- Product Details Link -->
             <p class="details">🔽 Detaliile Produsului</p>
-            <p>Descoperă ROBI FreshCare, soluția ideală pentru un aspect îngrijit și o senzație de prospețime întreaga zi! Cu o formulă inovatoare, acest produs combină curățarea delicată cu un parfum revigorant, oferindu-ți un look fresh și energic. Datorită tehnologiei avansate, neutralizează impuritățile, lăsând pielea catifelată și protejată. Indiferent dacă ești în mișcare sau te pregătești pentru o ieșire specială, ROBI FreshCare te ajută să arăți impecabil. Adaugă acest produs esențial în rutina ta zilnică și bucură-te de îngrijire premium cu un stil inconfundabil!</p>
+            <p>Pasta de dinți Sensodyne Nourish Gently Soothing 75 ml este special formulată pentru persoanele cu dinți sensibili, oferind multiple beneficii pentru sănătatea orală.</p>
         </div>
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>

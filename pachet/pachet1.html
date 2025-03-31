@@ -22,9 +22,11 @@
                 <li><a href="../about_us.html">About Us</a></li>
                 <li><a href="../contact.html">Contact</a></li>
             </ul>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+            <a href="../cart.html">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </a>
         </div>
     </nav> 
     <a style="text-decoration: none;" href="../pachete.html" >
@@ -42,12 +44,12 @@
             <h1>Set Giga 5 produse</h1>
             <p>Disponibil in stoc</p>
             <p>Taxa de livrare inclusa</p>
-            <p class="price">46,80 Lei</p><p>( TVA inclus )</p>
+            <p class="price">82,95 lei</p><p>( TVA inclus )</p>
 
             <!-- Quantity & Add to Cart -->
             <div class="cart-options">
                 <input type="number" value="1" min="1" class="quantity">
-                <button class="add-to-cart">Adaugă în Coș</button>
+                <button class="add-to-cart" onclick="addToCart({ id: 'pachet1', name: 'Set Giga 5 produse', price: 82.95  })">Adauga in cos</button>
             </div>
 
             <!-- Product Details Link -->
@@ -61,6 +63,9 @@
                 </p>
         </div>
     </div>
+
+    <script src="../script.js"></script>
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!-- Footer -->
