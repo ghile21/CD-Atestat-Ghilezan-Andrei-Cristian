@@ -48,7 +48,7 @@ function renderCart() {
     total += product.price * product.quantity;
   });
 
-  totalContainer.textContent = `Total: ${total} EUR`;
+  totalContainer.textContent = `Total: ${total/5} EUR`;
   renderPaypal(total); // Reafișăm butonul PayPal
 }
 

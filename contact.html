@@ -35,24 +35,16 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!-- Contact -->
-    <form 
-    method="POST" 
-    action="https://script.google.com/macros/s/AKfycbyYHDxLM91vBEj12ojEbImsyhs_7s_gB9yDlIia03n_ZQbwo0IYo1sGjPBXvY2XAuThUA/exec"
-    >
     <div class="contact-container">
         <div class="contact-form">
             <h2>Trimite un mesaj</h2>
-            <form 
-                method="POST"  
-                action="https://script.google.com/macros/s/AKfycbzxkFL1Wd5gAxbuddA5tgl4L0l4ii7TATdqbJTQ3jJxlwk2h3xOTYEwKdJVjtlyddsNnQ/exec"
-            >
+            <form name="submit-to-google-sheet">
                 <input name="nume" type="text" placeholder="Nume" required>
                 <input name="prenume" type="text" placeholder="Prenume" required>
                 <input name="email" type="email" placeholder="Email" required>
                 <textarea name="mesaj" placeholder="Mesajul..." rows="5" required></textarea>
                 <button type="submit">Trimite</button>
-                </form>
-
+            </form>
         </div>
         
         <div class="contact-details">
@@ -66,7 +58,6 @@
             </div>
         </div>
     </div>
-    </form>
 
 
     <!-- Branduri -->
@@ -117,6 +108,16 @@
     function topFunction() {
         document.documentElement.scrollTop = 0; 
     }
+    
+    const scriptURL ='https://script.google.com/macros/s/AKfycbw1T-YkRB2UmOLMMPEY5FXYmmW3TXkUckP6T9vlozQPxyJ9wVgc31xKmXPPvT-U-VGZ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
     </script>
     
 </body>
